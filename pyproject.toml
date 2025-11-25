@@ -5,6 +5,7 @@ description = "CLI tool to simplify OpenVPN server management and client profile
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "fabric>=3.2.2",
     "jinja2>=3.1.6",
     "paramiko>=4.0.0",
     "pydantic>=2.12.4",
