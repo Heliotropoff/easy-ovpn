@@ -1,7 +1,16 @@
 [project]
 name = "easy-ovpn"
 version = "0.1.0"
-description = "Add your description here"
+description = "CLI tool to simplify OpenVPN server management and client profile creation on Debian/Ubuntu VPS"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "jinja2>=3.1.6",
+    "paramiko>=4.0.0",
+    "pydantic>=2.12.4",
+    "python-dotenv>=1.2.1",
+    "rich>=14.2.0",
+    "typer>=0.20.0",
+]
+[project.scripts]
+easy-ovpn = "ovpnctl.cli:app" # creates the `easy-ovpn` command
